@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodePlayer</title>
+        <!--link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"-->
+        <link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="navbar bg-light" id="nav-bar">
+                <div class="navbar-brand">CodePlayer</div>
+                <ul class="form-inline" id="nav-form">
+                    <div class="btn btn-sm displayButtons" id="HTML" onclick="codeArea(`HTML`)" style = "background-color: lightgrey;">HTML</div>
+                    <div class="btn btn-sm displayButtons" id="CSS" onclick="codeArea(`CSS`)">CSS</div>
+                    <div class="btn btn-sm displayButtons" id="JS" onclick="codeArea(`JS`)">JS</div>
+                    <div class="btn btn-sm displayButtons" id="Result" onclick="codeArea(`Result`)" style = "background-color: lightgrey;">Result</div>
+                </ul>
+                <div class="btn btn-secondary btn-md" id="runButton">RUN</div>
+            </div>
+            <div class="row">
+                <!-- HTML code diplay section-->
+                <div class="codeDisplay col-md-6" id="HTML-Code">
+                    <div class="row myheader"> <p>HTML</p> </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea id="HTML-textarea" placeholder="<!-- HTML code goes here! -->"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- CSS code diplay section-->
+                <div class="codeDisplay" id="CSS-Code">
+                    <div class="row myheader"> <p>CSS</p> </div>
+                    <div class="row" id="css-row-id">
+                        <div class="col-md-12" id="house-CSS-textarea">
+                            <textarea id="CSS-textarea" placeholder="/* CSS goes here! */"class="codeInput"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- JS code diplay section-->
+                <div class="codeDisplay" id="JS-Code">
+                    <div class="row myheader"> <p>JS</p> </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea id="JS-textarea" placeholder="// JS code goes here"></textarea>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Result diplay section-->
+                <div class="codeDisplay col-md-6" id="Result-Code">
+                    <iframe id="codeDisplayIframe"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>
+        <!--script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script-->
+        <!--script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script-->
+    </body>
+</html>

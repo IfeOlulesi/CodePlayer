@@ -1,0 +1,81 @@
+#nav-form {
+    list-style: none;
+    border-right: 1px solid grey;
+    margin-top: 22px;
+}
+
+#nav-form div {
+    border-left: 1px solid grey;
+    border-radius: 0px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.codeDisplay {
+    border: 1px solid grey;
+    height: 100%;
+}
+
+#HTML-Code {
+    background-color: rgb(253, 100, 11);
+}
+/*
+#HTML-textarea {
+    background-image: url(img/html-logo.jpg); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+*/
+#CSS-Code {
+    display: none;
+    background-color: lightskyblue;
+}
+
+#CSS-textarea {
+    background-image: url(img/css-logo.png);
+}
+
+#JS-Code {
+    display: none;
+    background-color: rgb(224, 224, 38);
+}
+
+#JS-textarea {
+    background-image: url(img/js-logo.png);
+}
+
+iframe {
+    width: inherit;
+    border: 1px black;
+    padding: 10px;
+}
+
+textarea {
+    width: inherit;
+    max-width: inherit;
+    overflow: auto;
+    resize: none;
+    opacity: 0.8;
+    background-size: cover;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    background-image: url(img/html-logo.jpg); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.codeDisplay .myheader p {
+    margin-top: 10px;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.codeInput {
+    height:400px;
+    max-height: inherit;
+    border: 1px solid gray;
+}
