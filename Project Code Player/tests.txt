@@ -1,4 +1,6 @@
-<html>
+//HTML Code
+// Please note that the HTML tags are optional
+<html> 
     <head>
         <title>Sample Page </title>
     </head>
@@ -7,18 +9,21 @@
             This is a sample header
         </h2>
          <p>
-            Lorem ipsum dolor sit amet. Consectuer blablabla
-
-Je m'appelle Ife Olulesi
-Je suis Ife Olulesi
-Je parle Anglais et English
-tu manges croissant
-
+            Lorem ipsum dolor sit amet. Consectuer blablabla...          
+            Je parle Anglais et Francais.
+            Tu manges croissant.
          </p>
-
+         <div id="sampleDiv">
+            Run all kinds of tests on me!!!
+         </div>
     </body>
 </html>
 
+// CSS Code
 html{background-color: blue;} 
 h1 {font-size: 28px;} 
-p{font-size: 15px;}
+div{width: 200px; height: 100px; background-color: lightblue; font-size: 15px; border-radius: 8px; border-right: 1px solid grey;}
+
+// JS Code
+var testDiv = document.getElementById("sampleDiv");
+...play around with it
